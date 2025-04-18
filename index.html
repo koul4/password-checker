@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Password Strength Checker Application</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f7fa;
+      color: #333;
+    }
+    header {
+      background-color: #2d3e50;
+      color: white;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+    nav {
+      margin-top: 0.5rem;
+    }
+    nav a {
+      color: white;
+      margin-right: 1rem;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    h2 {
+      color: #2d3e50;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.3rem;
+    }
+    ul {
+      margin-top: 0.5rem;
+      padding-left: 1.2rem;
+    }
+    code {
+      background: #eee;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #2d3e50;
+      color: white;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Password Strength Checker Application</h1>
+    <nav>
+      <a href="#summary">Executive Summary</a>
+      <a href="#introduction">Introduction</a>
+      <a href="#objectives">Objectives</a>
+      <a href="#scope">Scope</a>
+      <a href="#security">Security</a>
+      <a href="#architecture">Architecture</a>
+      <a href="#tools">Tools</a>
+      <a href="#challenges">Challenges</a>
+      <a href="#testing">Testing</a>
+      <a href="#future">Future Work</a>
+      <a href="#conclusion">Conclusion</a>
+      <a href="#references">References</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="summary">
+      <h2>1. Executive Summary</h2>
+      <p>The Password Strength Checker Application is a straightforward tool designed to help users evaluate the strength of their passwords. This application checks if passwords meet certain security criteria, such as length, complexity, and the use of uppercase, lowercase, and special characters...</p>
+    </section>
+
+    <section id="introduction">
+      <h2>2. Introduction</h2>
+      <p>In the current digital landscape, security is a top priority. Weak passwords remain one of the most common attack vectors for hackers...</p>
+    </section>
+
+    <section id="objectives">
+      <h2>3. Objectives</h2>
+      <ul>
+        <li><strong>Password Evaluation:</strong> Analyze length, complexity, and special characters.</li>
+        <li><strong>Improve User Awareness:</strong> Educate users on strong password practices.</li>
+        <li><strong>Simple and Accessible Interface:</strong> Ensure non-tech-savvy usability.</li>
+        <li><strong>Feedback Mechanism:</strong> Provide real-time password strength feedback.</li>
+      </ul>
+    </section>
+
+    <section id="scope">
+      <h2>4. Project Scope</h2>
+      <p><strong>Included:</strong></p>
+      <ul>
+        <li>Password strength evaluation.</li>
+        <li>Real-time feedback using GUI.</li>
+        <li>Developed using Python and Tkinter.</li>
+      </ul>
+      <p><strong>Not Included:</strong></p>
+      <ul>
+        <li>Password storage or encryption.</li>
+        <li>Advanced security features.</li>
+      </ul>
+    </section>
+
+    <section id="security">
+      <h2>5. Security Considerations</h2>
+      <ul>
+        <li>Temporary password validation with no storage.</li>
+        <li>Secure masked input field.</li>
+        <li>Follows basic security best practices.</li>
+      </ul>
+    </section>
+
+    <section id="architecture">
+      <h2>6. Architecture and Design</h2>
+      <ul>
+        <li>Simple Tkinter-based GUI.</li>
+        <li>Uses regex for strength checks.</li>
+        <li>Handles invalid inputs gracefully.</li>
+      </ul>
+    </section>
+
+    <section id="tools">
+      <h2>7. Tools and Technologies Used</h2>
+      <ul>
+        <li>Python</li>
+        <li>Tkinter</li>
+        <li>Regex</li>
+        <li>PyInstaller</li>
+        <li>Inno Setup</li>
+      </ul>
+    </section>
+
+    <section id="challenges">
+      <h2>8. Challenges and Mitigations</h2>
+      <p><strong>UI Design:</strong> Kept simple and clear with color-coded feedback.</p>
+      <p><strong>Password Evaluation:</strong> Implemented effective regex checks.</p>
+      <p><strong>User Experience:</strong> Feedback is meaningful and non-technical.</p>
+    </section>
+
+    <section id="testing">
+      <h2>9. Security Testing</h2>
+      <ul>
+        <li><strong>Case 1:</strong> "12345678" → Weak</li>
+        <li><strong>Case 2:</strong> "Str0ngP@ssw0rd!" → Strong</li>
+        <li><strong>Case 3:</strong> Real-time feedback when typing password</li>
+      </ul>
+    </section>
+
+    <section id="future">
+      <h2>10. Future Work and Improvements</h2>
+      <ul>
+        <li>Implement encryption for secure storage.</li>
+        <li>Check passwords against data breach databases.</li>
+        <li>Create mobile version for iOS/Android.</li>
+        <li>Add support for multi-factor authentication.</li>
+      </ul>
+    </section>
+
+    <section id="conclusion">
+      <h2>11. Conclusion</h2>
+      <p>The Password Strength Checker Application helps users build stronger passwords with ease and awareness. It offers a practical way to reduce vulnerabilities due to poor password practices.</p>
+    </section>
+
+    <section id="references">
+      <h2>12. References</h2>
+      <ul>
+        <li><a href="https://docs.python.org/" target="_blank">Python Documentation</a></li>
+        <li><a href="https://tkdocs.com/" target="_blank">Tkinter Documentation</a></li>
+        <li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html" target="_blank">OWASP Password Policy Cheat Sheet</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Password Strength Checker Project
+  </footer>
+</body>
+</html>
